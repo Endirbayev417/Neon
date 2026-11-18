@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeOn</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fx.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Ne<span>O</span>n</a>
+        <ul id="menu">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a class="btn" href="registration.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Ne<b>O</b>n</h1>
+        <p>Добро пожаловать в светящийся мир кода.<br><span class="typed" id="typed"></span></p>
+        <a class="btn" id="startBtn" href="registration.html">Начать</a>
+        <a class="btn ghost" href="#about">Узнать больше</a>
+    </header>
+
+    <div class="marquee"><div class="track" id="track">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQLite</span><span>Android Studio</span><span>C#</span><span>Игры</span>
+    </div></div>
+
+    <section class="cards" id="about">
+        <div class="card"><div class="ico">📱</div><h3>Android Studio</h3><p>В Android Studio можно писать на нескольких языках: Kotlin, Java и C++.</p></div>
+        <div class="card"><div class="ico">⚡</div><h3>Быстро</h3><p>Лёгкая страница без лишних библиотек: только HTML и CSS.</p></div>
+        <div class="card"><div class="ico">🎮</div><h3>Игры</h3><p>Создавай свои игры и делись ими с друзьями.</p></div>
+    </section>
+
+    <section class="block" id="people">
+        <h2 class="title">Расскажи о <b>себе</b></h2>
+        <p class="lead">Напиши пару слов — твой рассказ появится на главной и останется здесь.</p>
+        <div id="aboutBox"></div>
+        <div class="wall" id="aboutList"></div>
+    </section>
+
+    <section class="block" id="reviews">
+        <h2 class="title">Отзывы</h2>
+        <p class="lead">Отзыв можно оставить после рассказа о себе.</p>
+        <div id="reviewBox"></div>
+        <div class="wall" id="reviewList"></div>
+    </section>
+
+    <footer>© 2026 NeOn. Свободный код — бери и используй.</footer>
+    <script src="auth.js"></script>
+    <script src="fx.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

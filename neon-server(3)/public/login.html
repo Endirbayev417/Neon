@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="fx.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Ne<span>O</span>n</a>
+        <ul><li><a href="registration.html">Регистрация</a></li></ul>
+    </nav>
+
+    <main class="auth">
+        <form class="form" id="loginForm">
+            <h1>Вход</h1>
+            <p class="sub">С возвращением!</p>
+
+            <div class="field">
+                <label for="user">Имя пользователя или email</label>
+                <input id="user" type="text" placeholder="Username" required>
+            </div>
+            <div class="field">
+                <label for="pass">Пароль</label>
+                <div class="pass-wrap">
+                    <input id="pass" type="password" placeholder="Ваш пароль" required>
+                    <button type="button" class="eye">👁</button>
+                </div>
+            </div>
+
+            <button class="btn" type="submit">Войти</button>
+            <p class="msg" id="msg"></p>
+            <p class="switch">Нет аккаунта? <a href="registration.html">Создать</a></p>
+        </form>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="fx.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
