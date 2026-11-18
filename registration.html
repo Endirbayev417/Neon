@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="fx.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Ne<span>O</span>n</a>
+        <ul><li><a href="login.html">Вход</a></li></ul>
+    </nav>
+
+    <main class="auth">
+        <form class="form" id="regForm">
+            <h1>Регистрация</h1>
+            <p class="sub">Создай аккаунт за пару секунд</p>
+
+            <div class="field">
+                <label for="user">Имя пользователя</label>
+                <input id="user" type="text" placeholder="Username" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@mail.com" required>
+            </div>
+            <div class="field">
+                <label for="pass">Пароль</label>
+                <div class="pass-wrap">
+                    <input id="pass" type="password" placeholder="Минимум 6 символов" minlength="6" required>
+                    <button type="button" class="eye">👁</button>
+                </div>
+            </div>
+            <div class="field">
+                <label for="pass2">Повтори пароль</label>
+                <div class="pass-wrap">
+                    <input id="pass2" type="password" placeholder="Ещё раз пароль" required>
+                    <button type="button" class="eye">👁</button>
+                </div>
+            </div>
+
+            <button class="btn" type="submit">Зарегистрироваться</button>
+            <p class="msg" id="msg"></p>
+            <p class="switch">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+        </form>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="fx.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
